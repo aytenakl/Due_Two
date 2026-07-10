@@ -1,0 +1,663 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ===== Space Theme Colors ===== */
+
+:root {
+
+    --background: #030712;
+    --primary: #1D4ED8;
+    --purple: #9333EA;
+    --cyan: #22D3EE;
+    --text: #F8FAFC;
+    --gray: #94A3B8;
+    --card: #111827;
+
+}
+
+
+
+body {
+
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.7;
+
+}
+
+
+
+h1, h2, h3 {
+
+    font-weight: 800;
+
+}
+
+
+
+section {
+
+    padding: 80px 10%;
+
+}
+
+
+
+h2 {
+
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: var(--cyan);
+
+    text-shadow:
+    0 0 10px rgba(34,211,238,.5);
+
+}
+
+
+
+p {
+
+    font-size: 17px;
+    color: #E2E8F0;
+
+}
+
+
+
+/* ================= Home ================= */
+
+
+.home {
+
+    min-height:90vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:50px 10%;
+
+
+    background:
+
+    radial-gradient(
+        circle at top,
+        rgba(34,211,238,0.25),
+        transparent 40%
+    ),
+
+    linear-gradient(
+        135deg,
+        #030712,
+        #1D4ED8,
+        #9333EA
+    );
+
+
+    color:white;
+
+}
+
+
+
+.home h1 {
+
+    font-size:60px;
+
+    margin-bottom:20px;
+
+
+    text-shadow:
+
+    0 0 15px #22D3EE,
+    0 0 35px #9333EA;
+
+}
+
+
+
+.home h3 {
+
+    font-size:28px;
+
+    margin-bottom:25px;
+
+    color:#22D3EE;
+
+}
+
+
+
+.home p {
+
+    max-width:800px;
+
+    font-size:18px;
+
+    color:#E2E8F0;
+
+    margin:12px auto;
+
+    line-height:1.8;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+
+.home h1 {
+
+    font-size:38px;
+
+}
+
+
+.home h3 {
+
+    font-size:20px;
+
+}
+
+
+.home p {
+
+    font-size:16px;
+
+}
+
+
+}
+
+
+
+/* ================= About ================= */
+
+
+.about {
+
+    text-align:center;
+
+}
+
+
+
+.about p {
+
+    max-width:900px;
+    margin:20px auto;
+
+}
+
+
+
+.founders-container {
+
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+    margin:40px 0;
+
+}
+
+
+
+.founder-card {
+
+
+    background:var(--card);
+
+    padding:30px;
+
+    border-radius:20px;
+
+    border:1px solid #1e293b;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.5);
+
+    transition:.3s;
+
+}
+
+
+
+.founder-card:hover {
+
+    transform:translateY(-10px);
+
+    border-color:var(--cyan);
+
+}
+
+
+
+
+/* ================= Services ================= */
+
+
+.services {
+
+    text-align:center;
+
+}
+
+
+
+.services > p {
+
+    max-width:850px;
+    margin:auto;
+
+}
+
+
+
+.services-container {
+
+
+    margin-top:50px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+.service-box {
+
+
+    background:var(--card);
+
+    padding:35px 25px;
+
+    border-radius:20px;
+
+    border:1px solid #1e293b;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.5);
+
+    transition:.3s;
+
+}
+
+
+
+.service-box:hover {
+
+    transform:translateY(-12px);
+
+    border-color:var(--cyan);
+
+}
+
+
+
+.service-box h3 {
+
+    color:var(--cyan);
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+/* ================= Projects ================= */
+
+
+.projects {
+
+    text-align:center;
+h3,
+h3 a {
+    color: white;
+}
+}
+
+
+
+.project-box {
+
+
+    background:var(--card);
+
+    margin:30px auto;
+
+    max-width:850px;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    border:1px solid #1e293b;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.5);
+
+    text-align:left;
+
+}
+
+
+
+.project-box h3 {
+
+    color:var(--cyan);
+
+}
+
+
+
+
+/* ================= Why Choose Us ================= */
+
+
+.why-us {
+
+    text-align:center;
+
+}
+
+
+
+.features-container {
+
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    margin-top:40px;
+
+}
+
+
+
+.feature-box {
+
+
+    background:var(--card);
+
+    padding:30px;
+
+    border-radius:20px;
+
+    border:1px solid #1e293b;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.5);
+
+    transition:.3s;
+
+}
+
+
+
+.feature-box:hover {
+
+    transform:translateY(-10px);
+
+    border-color:var(--cyan);
+
+}
+
+
+
+.feature-box h3 {
+
+    color:var(--cyan);
+
+}
+
+
+
+
+/* ================= Technologies ================= */
+
+
+.technologies {
+
+    text-align:center;
+
+}
+
+
+
+.tech-container {
+
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:20px;
+
+    margin-top:40px;
+
+}
+
+
+
+.tech-box {
+
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #1D4ED8,
+        #9333EA
+    );
+
+
+    color:white;
+
+    padding:15px 30px;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+
+
+.tech-box:hover {
+
+    transform:scale(1.1);
+
+    box-shadow:
+
+    0 0 20px #22D3EE;
+
+}
+
+
+
+
+/* ================= Footer ================= */
+
+
+footer {
+
+
+    background:#020617;
+
+    color:white;
+
+    text-align:center;
+
+    padding:50px 10%;
+
+}
+
+
+
+footer h2 {
+
+    color:white;
+
+}
+
+
+
+.founders-links {
+
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:50px;
+
+    flex-wrap:wrap;
+
+    margin:40px 0;
+
+}
+
+
+
+.founder {
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+
+
+.founder h3 {
+
+    color:var(--cyan);
+
+}
+
+
+
+.founder a {
+
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+}
+
+
+
+.founder a:hover {
+
+
+    color:var(--cyan);
+
+}
+
+
+
+
+/* ================= Mobile ================= */
+
+
+@media(max-width:768px){
+
+
+.home h1 {
+
+    font-size:35px;
+
+}
+
+
+.home h3 {
+
+    font-size:20px;
+
+}
+
+
+section {
+
+    padding:50px 5%;
+
+}
+
+
+h2 {
+
+    font-size:32px;
+
+}
+
+
+.founders-links {
+
+    flex-direction:column;
+
+}
+
+
+}
+/* Footer names and emails */
+
+.founder h3 {
+    color: rgb(19, 215, 208);
+}
+.email-link,
+.email-link:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.email-link:hover {
+    color: var(--cyan);
+}
+
+.founder a {
+    color: rgb(205, 205, 211);
+    text-decoration: none;
+}
+
+.founder a:hover {
+    color: var(--cyan);
+}

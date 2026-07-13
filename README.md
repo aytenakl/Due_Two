@@ -1,5 +1,5 @@
 # Due Two Website
-
+https://aytenakl.github.io/Due_Two/
 ## Overview
 
 The official website of Due Two, a technology startup specializing in Artificial Intelligence, Robotics, Embedded Systems, Software Engineering, and Web Development.
@@ -19,6 +19,7 @@ The purpose of this project is to establish Due Two's online presence and showca
 - Technology stack
 - Contact information
 - Clean and intuitive UI
+
 
 ## Technologies
 

@@ -1,21 +1,34 @@
 # Due Two Website
 
 ## Overview
-A modern responsive website designed to showcase custom mouth guards.
+
+The official website of Due Two, a technology startup specializing in Artificial Intelligence, Robotics, Embedded Systems, Software Engineering, and Web Development.
+
+The website presents our vision, mission, services, projects, technologies, and founders through a modern and responsive user experience.
+
+## Purpose
+
+The purpose of this project is to establish Due Two's online presence and showcase our expertise, ongoing projects, and future vision in intelligent technology solutions.
+
+## Features
+
+- Modern responsive design
+- Company profile
+- Services section
+- Featured projects
+- Technology stack
+- Contact information
+- Clean and intuitive UI
 
 ## Technologies
+
 - HTML
 - CSS
 - JavaScript
 
-## Features
-- Responsive Design
-- Modern UI
-- Contact Section
-- Product Showcase
+## Status
 
-## Live Demo
-https://aytenakl.github.io/Due_Two/
+🚧 Currently under development. 
 
-## Author
-Ayten Ehab
+## Developed By
+Ayten Ehab Akl & Ayten el magraby

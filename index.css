@@ -26,6 +26,35 @@ body {
     line-height: 1.7;
     overflow-x: hidden;
 }
+/* صندوق اللوجو بعد التكبير والتعديل */
+.logo {
+    overflow: hidden;
+    height: 85px;      /* الارتفاع المثالي لإعطاء مساحة للوجو */
+    width: 175px;      /* العرض المناسب لعرض حروف الاسم بالكامل دون قص */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* تعديل فلتر وقص اللوجو كـ Image */
+.logo img {
+    height: 95px;      /* تكبير الصورة الأساسية لتظهر التفاصيل بوضوح */
+    width: auto;
+    display: block;
+    
+    /* الفلتر السحري لإلغاء الخلفية السوداء */
+    mix-blend-mode: screen; 
+    
+    /* تكبير وقص احترافي لإخفاء الدائرة الخارجية والتركيز على اللوجو والاسم */
+    object-fit: cover;
+    transform: scale(1.85); 
+    
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.95); /* حركة زوم تفاعلية ناعمة ومميزة عند الوقوف بالماوس */
+}
 
 h1, h2, h3 {
     font-weight: 800;

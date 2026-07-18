@@ -164,7 +164,8 @@ p {
 }
 
 
-.home h3 {
+.home h3 { 
+    align-items:center;
 
     font-size:28px;
 

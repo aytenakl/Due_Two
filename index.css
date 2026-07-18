@@ -31,8 +31,8 @@ body {
     margin:0 auto 30px;
     display:flex;
     justify-content:center;
-    align-items:center;
-}
+    /* align-items:center; */
+ margin_left:30px} 
 
 .home .logo img{
     width:100%;

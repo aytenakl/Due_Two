@@ -276,10 +276,10 @@ p {
 /* Projects */
 
 
+/* Projects */
+
 .projects {
-
     text-align:center;
-
 }
 
 
@@ -303,38 +303,7 @@ p {
 }
 
 
-.btn {
-
-    display:inline-block;
-
-    margin-left:15px;
-
-    padding:8px 18px;
-
-    border-radius:25px;
-
-    background:linear-gradient(
-        135deg,
-        var(--primary),
-        var(--purple)
-    );
-
-    color:white;
-
-    text-decoration:none;
-
-    transition:.3s;
-
-}
-
-
-.btn:hover {
-
-    transform:scale(1.1);
-
-    box-shadow:0 0 20px var(--cyan);
-
-} /* Robot Project Card */
+/* Robot Project Card */
 
 .project-card {
 
@@ -416,8 +385,40 @@ p {
 }
 
 
+/* Buttons */
 
-/* Technologies */
+.btn {
+
+    display:inline-block;
+
+    margin-left:15px;
+
+    padding:8px 18px;
+
+    border-radius:25px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--purple)
+    );
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+
+.btn:hover {
+
+    transform:scale(1.1);
+
+    box-shadow:0 0 20px var(--cyan);
+
+}/* Technologies */
 
 
 .tech-container {

@@ -69,7 +69,8 @@ p {
 /* about section */
 .about h3 {
    text-align: center;
-   margin-top: 10px;
+   margin-top: 20px;
+   text-size: 20px;
 }
 
 /* ================= Animations ================= */
@@ -516,4 +517,23 @@ h2 {
 }
 
 }
+ 
+.btn {
+    display: inline-block;
+    margin-left: 12px;
+    padding: 8px 20px;
+    background: linear-gradient(135deg, var(--primary), var(--purple));
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    vertical-align: middle;
+    transition: .3s;
+}
 
+.btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px var(--cyan);
+    color: white;
+}

@@ -1,4 +1,4 @@
-```css
+
 * {
     margin: 0;
     padding: 0;
@@ -184,9 +184,11 @@ p {
 
     font-size:18px;
 
-    margin:12px auto;
+    /* margin:12px auto; */
 
     animation: fadeUp 1s ease .8s both;
+    
+    text-align: center;
 
 }
 
@@ -273,7 +275,6 @@ p {
 
 
 
-/* Projects */
 /* Projects */
 .projects > p {
     text-align: center;
@@ -503,4 +504,4 @@ h2 {
 }
 
 }
-```
+

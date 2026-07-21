@@ -167,7 +167,8 @@ p {
 
 
 .home h3 { 
-    align-items:center;
+
+    text-align:center;
 
     font-size:28px;
 
@@ -272,6 +273,7 @@ p {
 .founder-card h3 {
 
     color:var(--cyan);
+    text-align:center;
 
 }
 
@@ -332,6 +334,7 @@ p {
 .project-box h3 {
 
     color:white;
+    text-align:center;
 
 }
 
@@ -460,6 +463,7 @@ footer h2 {
 .founder h3 {
 
     color:var(--cyan);
+    text-align: center;
 
 }
 
@@ -495,6 +499,7 @@ footer h2 {
 
 .home h3 {
     font-size:20px;
+    tesxt-align:center;
 }
 
 section {

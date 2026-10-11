@@ -1,8 +1,4 @@
-/* ==========================================================
-   Due Two — design tokens
-   Palette comes straight from the logo: cyan → electric blue → violet
-   on deep ink. Type: Sora (display) + Manrope (text).
-   ========================================================== */
+
 :root {
     --ink: #050A18;
     --ink-2: #0A1226;

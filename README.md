@@ -22,6 +22,8 @@ The website serves as the official online presence of Due Two, showcasing its se
 - JavaScript
 - Git & GitHub
 - GitHub Pages
+- <img width="1451" height="887" alt="لقطة شاشة 2026-10-26 221629" src="https://github.com/user-attachments/assets/9abf8c33-5bf1-4f64-b1d5-574639095f08" />
+
 
 ## 🌐 Live Website
 

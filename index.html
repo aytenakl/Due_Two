@@ -1,161 +1,450 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Due Two — AI • Robotics • Software Engineering</title>
-<meta name="description" content="Due Two builds intelligent solutions through AI, Robotics, Embedded Systems and Software Engineering.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070b1b">
+  <meta name="description" content="Due Two builds intelligent solutions through AI, Robotics, Embedded Systems and Software Engineering.">
+  <title>Due Two — AI, Robotics & Software Engineering</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+
 <header class="nav" id="nav">
   <a href="#home" class="brand">
-    <svg viewBox="0 0 64 64" width="38" height="38" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs><path d="M20 10h16a22 22 0 0 1 0 44H20z" fill="none" stroke="url(#g)" stroke-width="6" stroke-linejoin="round"/><path d="M4 22h14M4 32h14M4 42h14" stroke="#22d3ee" stroke-width="3" stroke-linecap="round"/><text x="33" y="40" font-size="22" font-weight="800" fill="url(#g)" font-family="Arial">2</text></svg>
+    <span class="brand-icon">D<span>2</span></span>
     <span>Due<br>Two</span>
   </a>
-  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button>
+
+  <button class="burger" id="burger" aria-label="Toggle navigation">
+    <i></i><i></i><i></i>
+  </button>
+
   <nav class="links" id="links">
-    <a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#why">Why Due Two</a><a href="#technologies">Technologies</a>
-    <a href="#contact" class="btn small">Contact</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#why">Why Due Two</a>
+    <a href="#technologies">Technologies</a>
+    <a href="#contact" class="btn small">Contact ↗</a>
   </nav>
 </header>
 
 <main>
-<section class="hero" id="home">
-  <svg class="logo-big" viewBox="0 0 64 64" width="150" height="150" aria-hidden="true"><path d="M20 10h16a22 22 0 0 1 0 44H20z" fill="none" stroke="url(#g)" stroke-width="6" stroke-linejoin="round"/><path d="M4 22h14M4 32h14M4 42h14" stroke="#22d3ee" stroke-width="3" stroke-linecap="round"/><text x="33" y="40" font-size="22" font-weight="800" fill="url(#g)" font-family="Arial">2</text></svg>
-  <h1>Welcome to Due Two</h1>
-  <p class="typed"><span id="typed"></span><b class="cursor"></b></p>
-  <p class="lead"><strong>Due Two</strong> is a technology company focused on building intelligent solutions through Artificial Intelligence, Robotics, Embedded Systems, and modern Software Engineering.</p>
-  <p class="lead">We transform innovative ideas into smart, reliable, and impactful digital solutions.</p>
-  <p class="slogan">Innovating Today. Empowering Tomorrow.</p>
-  <div class="cta">
-    <a href="#projects" class="btn">View our projects</a>
-    <a href="#contact" class="btn ghost">Contact us</a>
-  </div>
-</section>
 
-<section id="about">
-  <h2>About Due Two</h2>
-  <p class="sub">Due Two was founded by two ambitious Computer Science students driven by a shared passion for innovation, technology, and problem-solving. Our goal is to create intelligent software solutions that bridge the gap between Artificial Intelligence, Robotics, and Software Engineering.</p>
-  <h3 class="mt">Our Founders</h3>
-  <div class="grid two">
-    <article class="card">
-      <h4>Ayten Ehab Akl</h4><p class="role">Computer Science &amp; Artificial Intelligence Student</p>
-      <p>Passionate about Artificial Intelligence, Robotics, Embedded Systems, and Software Development. Aspiring to design intelligent systems that integrate AI with software and hardware.</p>
-      <div class="row"><a class="chip" data-link="f1gh" target="_blank" rel="noopener">GitHub</a><a class="chip" data-link="f1li" target="_blank" rel="noopener">LinkedIn</a></div>
-    </article>
-    <article class="card">
-      <h4>Ayten El_Maghraby</h4><p class="role">Computer Science Student</p>
-      <p>Passionate about Software Engineering, Robotics, Embedded Systems, and Intelligent Vehicle Technologies.</p>
-      <div class="row"><a class="chip" data-link="f2gh" target="_blank" rel="noopener">GitHub</a><a class="chip" data-link="f2li" target="_blank" rel="noopener">LinkedIn</a></div>
-    </article>
-  </div>
-  <div class="grid two mt">
-    <article class="card"><h4>Our Mission</h4><p>To develop intelligent, reliable, and innovative technology solutions that empower individuals and businesses through Artificial Intelligence, Robotics, and modern Software Engineering.</p></article>
-    <article class="card"><h4>Our Vision</h4><p>To become a leading technology company recognized for excellence in Artificial Intelligence, Robotics, Software Engineering, and smart digital innovation.</p></article>
-  </div>
-</section>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-grid"></div>
+    <div class="circuit circuit-a"></div>
+    <div class="circuit circuit-b"></div>
 
-<section id="services">
-  <h2>Our Services</h2>
-  <p class="sub">At Due Two, we provide innovative technology solutions combining Artificial Intelligence, Software Engineering, Robotics, and modern digital technologies.</p>
-  <div class="grid three">
-    <article class="card"><span class="ico">🤖</span><h4>Artificial Intelligence</h4><p>AI solutions, Machine Learning models, Computer Vision, and intelligent automation systems.</p></article>
-    <article class="card"><span class="ico">💻</span><h4>Software Engineering</h4><p>Secure, scalable, and high-performance software solutions designed for modern needs.</p></article>
-    <article class="card"><span class="ico">🌐</span><h4>Web Development</h4><p>Responsive and modern websites with attractive designs and optimized performance.</p></article>
-    <article class="card"><span class="ico">🦾</span><h4>Robotics &amp; Embedded Systems</h4><p>Smart robotic systems combining hardware and software for real-world applications.</p></article>
-    <article class="card"><span class="ico">🚗</span><h4>Intelligent Vehicles</h4><p>Smart mobility solutions and intelligent vehicle technologies.</p></article>
-    <article class="card"><span class="ico">💡</span><h4>Technical Consultation</h4><p>Technology guidance, project planning, and innovative solutions.</p></article>
-  </div>
-</section>
+    <div class="logo-big">D<span>2</span></div>
 
-<section id="projects">
-  <h2>Featured Projects</h2>
-  <p class="sub">At Due Two, every project reflects our passion for innovation, creativity, and continuous learning.</p>
-  <div class="grid two">
-    <article class="card proj"><h4>🥊 JOPA Premium Mouth Guards Website</h4>
-      <p>A modern responsive website developed for JOPA, including clean UI design and smooth user experience.</p>
-      <p class="tech"><b>Technologies:</b> HTML, CSS, JavaScript</p><p class="ok">Status: Completed ✅</p>
-      <a class="chip" data-link="jopa" target="_blank" rel="noopener">Jopa Dental</a></article>
+    <p class="eyebrow">
+      <span></span> IDEAS INTO INTELLIGENT SOLUTIONS
+    </p>
 
-    <article class="card proj"><h4>👗 Zahra Atelier Website</h4>
-      <p>A modern Arabic fashion atelier website developed by Due Two for Zahra Atelier, designed to showcase the atelier's fashion design, tailoring, training, pattern making, clothing alterations, and manufacturing services through a professional digital presence.</p>
-      <p class="tech"><b>Technologies:</b> HTML • CSS • JavaScript • Responsive Web Design • GitHub Pages</p>
-      <ul><li>Modern and responsive Arabic website</li><li>Professional presentation of atelier services</li><li>Fashion design and tailoring services showcase</li><li>Training and educational services section</li><li>Pattern making and clothing alteration services</li><li>Manufacturing services presentation</li><li>Mobile-friendly user experience</li></ul>
-      <p class="ok">Status: Completed ✅</p><a class="chip" data-link="zahra" target="_blank" rel="noopener">Zahra Atelier</a></article>
+    <h1>Welcome to <span>Due Two</span></h1>
 
-    <article class="card proj"><h4>🌐 Triple A Events Website</h4>
-      <p>A professional business website developed by Due Two for Triple A Events &amp; Exhibition Management, designed to showcase the brand digitally with a modern and responsive user experience.</p>
-      <p class="tech"><b>Technologies:</b> HTML, CSS, JavaScript</p><p class="ok">Status: Completed ✅</p>
-      <a class="chip" data-link="triple" target="_blank" rel="noopener">Triple A Website</a></article>
+    <p class="typed">
+      <span id="typed">AI · Robotics · Software Engineering</span>
+      <b class="cursor">|</b>
+    </p>
 
-    <article class="card proj"><h4>🎬 Summit Productions Website</h4>
-      <p>A modern and responsive business website developed by Due Two for Summit Productions, a full-service production company specializing in filmmaking, video editing, advertisements, and creative commercial content.</p>
-      <p class="tech"><b>Technologies:</b> HTML, CSS, JavaScript</p>
-      <ul><li>Modern responsive design</li><li>Company introduction and brand identity</li><li>Services showcase</li><li>Selected projects section</li><li>Instagram integration for showcasing latest work</li><li>Contact section</li></ul>
-      <p class="ok">Status: Completed ✅</p><a class="chip" data-link="summit" target="_blank" rel="noopener">Summit Productions</a></article>
+    <p class="lead">
+      <strong>Due Two</strong> is a technology company focused on building
+      intelligent solutions through Artificial Intelligence, Robotics,
+      Embedded Systems, and modern Software Engineering.
+    </p>
 
-    <article class="card proj"><h4>🚗 HandDrive — Gesture-Controlled Robotic Car</h4>
-      <p>A real-time robotic car developed by Due Two, controlled using hand gestures detected through a webcam. The project combines computer vision, embedded systems, serial communication, and robotic vehicle control.</p>
-      <p class="tech"><b>Technologies:</b> Python • OpenCV • MediaPipe • Arduino • C++ • Computer Vision • Robotics</p>
-      <ul><li>Real-time hand gesture detection</li><li>Gesture-based robotic car control</li><li>Real-time camera processing</li><li>Arduino-based motor control</li><li>Serial communication between Python and Arduino</li><li>Forward, backward, left, right, and stop movement control</li></ul>
-      <p class="ok">Status: Completed ✅</p><a class="chip" data-link="handdrive" target="_blank" rel="noopener">GitHub Repository</a></article>
+    <p class="lead secondary-lead">
+      We transform innovative ideas into smart, reliable,
+      and impactful digital solutions.
+    </p>
 
-    <article class="card proj"><h4>🤖 Autonomous Line Follower &amp; Obstacle Avoidance Robot</h4>
-      <p>A smart robotic vehicle developed by Due Two, combining embedded programming, sensor integration, and autonomous navigation.</p>
-      <p class="tech"><b>Technologies:</b> Arduino Uno • C++ • IR Sensors • Ultrasonic Sensor • Motor Driver</p>
-      <ul><li>Line tracking using IR sensors</li><li>Obstacle detection using ultrasonic sensor</li><li>Automatic movement control</li><li>Embedded system programming</li></ul>
-      <p class="ok">Status: Completed ✅</p><a class="chip" data-link="linefollower" target="_blank" rel="noopener">GitHub Repository</a></article>
+    <p class="slogan">Innovating Today. Empowering Tomorrow.</p>
 
-    <article class="card proj"><h4>🤖 Automated Pick-and-Place Robotic Arm</h4>
-      <p>An automated robotic system developed by Due Two, combining embedded systems, robotics, motion control, and automation. The project performs continuous pick-and-place operations using multiple stepper motors and a servo-controlled robotic gripper.</p>
-      <p class="tech"><b>Technologies:</b> C++ • Arduino • Stepper Motors • Servo Motor • TMC2209 • A4988 • UART</p>
-      <ul><li>Automated pick-and-place operation</li><li>Automatic homing for the X and Y axes</li><li>Stepper motor control for X, Y, and Z axes</li><li>Servo-controlled robotic gripper</li><li>TMC2209 stepper motor drivers with UART communication</li><li>Continuous automated transfer cycles</li></ul>
-      <p class="ok">Status: Completed ✅</p><a class="chip" data-link="robotarm" target="_blank" rel="noopener">GitHub Repository</a></article>
+    <div class="cta">
+      <a href="#projects" class="btn">⌘ &nbsp; View our projects ↗</a>
+      <a href="#contact" class="btn ghost">✉ &nbsp; Contact us</a>
+    </div>
 
-    <article class="card proj"><h4>🌐 Due Two Official Website</h4>
-      <p>The official website of Due Two showcasing our services, projects, and technology expertise.</p>
-      <p class="ok">Status: Completed &amp; Continuously Improving 🚀</p>
-      <h4 class="mt2">🤖 Upcoming AI &amp; Robotics Projects</h4>
-      <p>Future innovations in Artificial Intelligence, Robotics, and Embedded Systems.</p><p class="soon">Status: Coming Soon 🔜</p></article>
-  </div>
-</section>
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About">
+      <span></span>
+    </a>
+  </section>
 
-<section id="why">
-  <h2>Why Choose Due Two</h2>
-  <p class="sub">At Due Two, we believe that exceptional technology begins with innovative thinking. We deliver smart, reliable, and future-ready solutions.</p>
-  <div class="grid three">
-    <article class="card"><span class="ico">🚀</span><h4>Innovation</h4><p>We transform creative ideas into innovative technology solutions using modern tools and development practices.</p></article>
-    <article class="card"><span class="ico">🤖</span><h4>AI &amp; Robotics</h4><p>Our expertise in Artificial Intelligence, Robotics, and Embedded Systems helps us create intelligent solutions.</p></article>
-    <article class="card"><span class="ico">💻</span><h4>Modern Software Development</h4><p>We build secure, scalable, and high-performance software solutions.</p></article>
-    <article class="card"><span class="ico">🎯</span><h4>Client-Centered Approach</h4><p>Every project focuses on user experience, quality, and long-term success.</p></article>
-    <article class="card"><span class="ico">📚</span><h4>Continuous Learning</h4><p>We continuously improve our skills to stay updated with emerging technologies.</p></article>
-    <article class="card"><span class="ico">✅</span><h4>Quality &amp; Reliability</h4><p>We deliver efficient and reliable solutions that create lasting value.</p></article>
-  </div>
-</section>
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <p class="kicker">01 / WHO WE ARE</p>
 
-<section id="technologies">
-  <h2>Our Technologies</h2>
-  <p class="sub">We use modern technologies and industry best practices to build innovative and scalable solutions.</p>
-  <div class="techs"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>C++</span><span>Artificial Intelligence</span><span>Machine Learning</span><span>Arduino</span><span>Git &amp; GitHub</span></div>
-</section>
+    <div class="section-head">
+      <h2>About <span>Due Two</span></h2>
+      <p class="sub">
+        We bring creativity and engineering together to turn
+        ambitious ideas into practical, real-world experiences.
+      </p>
+    </div>
 
-<section id="contact" class="contact">
-  <h2>Let's Build the Future Together.</h2>
-  <a class="btn" href="mailto:duetwo2026@gmail.com">duetwo2026@gmail.com</a>
-</section>
+    <p class="about-intro">
+      Due Two was founded by two ambitious Computer Science students
+      driven by a shared passion for innovation, technology, and
+      problem-solving. Our goal is to create intelligent solutions
+      connecting Artificial Intelligence, Robotics, and Software Engineering.
+    </p>
+
+    <h3 class="minor-heading">Meet Our Founders</h3>
+
+    <div class="grid two">
+      <article class="card founder-card">
+        <div class="avatar">AA</div>
+        <h3>Ayten Ehab Akl</h3>
+        <p class="role">Co-Founder & Software Developer</p>
+        <p>
+          Computer Science and Artificial Intelligence student
+          passionate about AI, Computer Vision, Robotics,
+          Embedded Systems, and Software Development.
+        </p>
+
+        <div class="row">
+          <a class="chip" href="https://github.com/aytenakl"
+             target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a class="chip"
+             href="https://linkedin.com/in/ayten-akl-3a1b58377/"
+             target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        </div>
+      </article>
+
+      <article class="card founder-card">
+        <div class="avatar purple">AM</div>
+        <h3>Ayten El_Maghraby</h3>
+        <p class="role">Co-Founder</p>
+        <p>
+          Computer Science student collaborating on technology
+          projects and innovative software solutions.
+        </p>
+        <div class="row">
+          <!-- Replace with the co-founder's actual profile links -->
+          <a class="chip" href="https://github.com/"
+             target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a class="chip" href="https://www.linkedin.com/"
+             target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="grid two mission-grid">
+      <article class="card">
+        <span class="ico">◎</span>
+        <h3>Our Mission</h3>
+        <p>
+          To develop intelligent, reliable, and innovative technology
+          solutions through Artificial Intelligence, Robotics,
+          and modern Software Engineering.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="ico">✧</span>
+        <h3>Our Vision</h3>
+        <p>
+          To become a technology company recognized for excellence
+          in AI, Robotics, Software Engineering, and digital innovation.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section alt-section">
+    <p class="kicker">02 / WHAT WE DO</p>
+
+    <div class="section-head">
+      <h2>Our <span>Services</span></h2>
+      <p class="sub">
+        Technology solutions combining AI, Software Engineering,
+        Robotics, and modern digital technologies.
+      </p>
+    </div>
+
+    <div class="grid three">
+      <article class="card service-card">
+        <span class="ico">🤖</span>
+        <h3>Artificial Intelligence</h3>
+        <p>
+          AI applications, Machine Learning, Computer Vision,
+          and intelligent automation.
+        </p>
+      </article>
+
+      <article class="card service-card">
+        <span class="ico">⌘</span>
+        <h3>Software Engineering</h3>
+        <p>
+          Reliable software solutions designed around
+          performance, maintainability, and user needs.
+        </p>
+      </article>
+
+      <article class="card service-card">
+        <span class="ico">🌐</span>
+        <h3>Web Development</h3>
+        <p>
+          Responsive websites with modern interfaces
+          and user-friendly experiences.
+        </p>
+      </article>
+
+      <article class="card service-card">
+        <span class="ico">🦾</span>
+        <h3>Robotics & Embedded Systems</h3>
+        <p>
+          Robotic systems integrating microcontrollers,
+          sensors, hardware, and software.
+        </p>
+      </article>
+
+      <article class="card service-card">
+        <span class="ico">🚗</span>
+        <h3>Intelligent Vehicles</h3>
+        <p>
+          Smart mobility concepts, gesture-controlled vehicles,
+          and embedded control systems.
+        </p>
+      </article>
+
+      <article class="card service-card">
+        <span class="ico">✦</span>
+        <h3>Technical Solutions</h3>
+        <p>
+          Technical project development, prototyping,
+          and support in turning ideas into working solutions.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <p class="kicker">03 / SELECTED WORK</p>
+
+    <div class="section-head">
+      <h2>Featured <span>Projects</span></h2>
+      <p class="sub">
+        A selection of websites and hands-on AI, Robotics,
+        and Software Engineering projects.
+      </p>
+    </div>
+
+    <div class="grid two project-grid">
+
+      <article class="card proj">
+        <div class="project-top">
+          <span class="project-emoji">👗</span>
+          <span class="project-type">CLIENT WEBSITE</span>
+        </div>
+        <h3>Zahra Atelier</h3>
+        <p>
+          An Arabic fashion atelier website showcasing tailoring,
+          fashion design, training, and atelier services.
+        </p>
+        <p class="tech">HTML · CSS · JavaScript · GitHub Pages</p>
+        <a class="chip"
+           href="https://aytenakl.github.io/zahra-atelier-website/"
+           target="_blank" rel="noopener noreferrer">Live Website ↗</a>
+        <a class="chip"
+           href="https://github.com/aytenakl/zahra-atelier-website"
+           target="_blank" rel="noopener noreferrer">Source Code ↗</a>
+      </article>
+
+      <article class="card proj">
+        <div class="project-top">
+          <span class="project-emoji">🚗</span>
+          <span class="project-type">ROBOTICS · COMPUTER VISION</span>
+        </div>
+        <h3>HandDrive</h3>
+        <p>
+          A gesture-controlled robotic car using computer vision
+          to translate hand movements into vehicle commands.
+        </p>
+        <p class="tech">Python · OpenCV · MediaPipe · Arduino</p>
+        <a class="chip"
+           href="https://github.com/aytenakl"
+           target="_blank" rel="noopener noreferrer">Explore GitHub ↗</a>
+      </article>
+
+      <article class="card proj">
+        <div class="project-top">
+          <span class="project-emoji">🦾</span>
+          <span class="project-type">ROBOTICS · AUTOMATION</span>
+        </div>
+        <h3>Hand-Controlled Robotic Arm</h3>
+        <p>
+          A robotic arm controlled by hand gestures using
+          real-time vision processing and microcontroller integration.
+        </p>
+        <p class="tech">Python · OpenCV · MediaPipe · Arduino · Servos</p>
+        <a class="chip"
+           href="https://github.com/aytenakl"
+           target="_blank" rel="noopener noreferrer">Explore GitHub ↗</a>
+      </article>
+
+      <article class="card proj">
+        <div class="project-top">
+          <span class="project-emoji">🤖</span>
+          <span class="project-type">EMBEDDED SYSTEMS</span>
+        </div>
+        <h3>Automated Pick-and-Place Arm</h3>
+        <p>
+          A robotic system combining stepper motors and a servo gripper
+          for automated pick-and-place operations.
+        </p>
+        <p class="tech">C++ · Arduino · TMC2209 · A4988 · UART</p>
+        <a class="chip"
+           href="https://github.com/aytenakl"
+           target="_blank" rel="noopener noreferrer">Explore GitHub ↗</a>
+      </article>
+
+      <article class="card proj">
+        <div class="project-top">
+          <span class="project-emoji">🌐</span>
+          <span class="project-type">WEB DEVELOPMENT</span>
+        </div>
+        <h3>Due Two Official Website</h3>
+        <p>
+          The official website presenting Due Two, its services,
+          projects, technology interests, and contact information.
+        </p>
+        <p class="tech">HTML · CSS · JavaScript · GitHub Pages</p>
+        <a class="chip"
+           href="https://aytenakl.github.io/Due_Two/"
+           target="_blank" rel="noopener noreferrer">Live Website ↗</a>
+        <a class="chip"
+           href="https://github.com/aytenakl/Due_Two"
+           target="_blank" rel="noopener noreferrer">Source Code ↗</a>
+      </article>
+
+      <article class="card proj">
+        <div class="project-top">
+          <span class="project-emoji">🧠</span>
+          <span class="project-type">ARTIFICIAL INTELLIGENCE</span>
+        </div>
+        <h3>Computer Vision & AI Projects</h3>
+        <p>
+          Practical experiments exploring object detection,
+          gesture recognition, and intelligent vision systems.
+        </p>
+        <p class="tech">Python · OpenCV · MediaPipe · YOLO</p>
+        <a class="chip"
+           href="https://github.com/aytenakl"
+           target="_blank" rel="noopener noreferrer">Explore GitHub ↗</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- WHY DUE TWO -->
+  <section id="why" class="section alt-section">
+    <p class="kicker">04 / WHY DUE TWO</p>
+
+    <div class="section-head">
+      <h2>Why choose <span>Due Two?</span></h2>
+      <p class="sub">
+        Curious minds, thoughtful engineering, and a passion
+        for turning ideas into useful technology.
+      </p>
+    </div>
+
+    <div class="grid three">
+      <article class="card">
+        <span class="ico">🚀</span>
+        <h3>Innovation</h3>
+        <p>Transforming creative ideas into practical solutions.</p>
+      </article>
+
+      <article class="card">
+        <span class="ico">🤖</span>
+        <h3>AI & Robotics</h3>
+        <p>Exploring intelligent software, robotics, and embedded systems.</p>
+      </article>
+
+      <article class="card">
+        <span class="ico">⌘</span>
+        <h3>Modern Development</h3>
+        <p>Building responsive, maintainable digital experiences.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- TECHNOLOGIES -->
+  <section id="technologies" class="section">
+    <p class="kicker">05 / OUR TOOLKIT</p>
+
+    <div class="section-head">
+      <h2>Our <span>Technologies</span></h2>
+      <p class="sub">
+        Technologies used across our software, AI, and robotics projects.
+      </p>
+    </div>
+
+    <div class="techs">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Python</span>
+      <span>C++</span>
+      <span>OpenCV</span>
+      <span>MediaPipe</span>
+      <span>YOLO</span>
+      <span>Computer Vision</span>
+      <span>Arduino</span>
+      <span>Embedded Systems</span>
+      <span>Git & GitHub</span>
+      <span>Software Engineering</span>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <div class="contact-glow"></div>
+
+    <p class="kicker">06 / LET'S COLLABORATE</p>
+
+    <h2>Let's build the<br><span>future together.</span></h2>
+
+    <p>
+      Have a project idea or want to collaborate?
+      We'd love to hear from you.
+    </p>
+
+    <div class="contact-actions">
+      <a class="btn" href="mailto:duetwo2026@gmail.com">
+        ✉ duetwo2026@gmail.com
+      </a>
+
+      <a class="btn ghost"
+         href="https://github.com/aytenakl/Due_Two"
+         target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+
+      <a class="btn ghost"
+         href="https://linkedin.com/in/ayten-akl-3a1b58377/"
+         target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+    </div>
+  </section>
+
 </main>
 
 <footer>
-  <div class="foot-people">
-    <div><strong>Ayten Ehab Akl</strong><a data-link="f1gh" target="_blank" rel="noopener">GitHub</a><a data-link="f1li" target="_blank" rel="noopener">LinkedIn</a></div>
-    <div><strong>Ayten El_Maghraby</strong><a data-link="f2gh" target="_blank" rel="noopener">GitHub</a><a data-link="f2li" target="_blank" rel="noopener">LinkedIn</a></div>
-  </div>
-  <p>© 2026 Due Two. All Rights Reserved.</p>
+  <a class="footer-brand" href="#home">DUE <span>TWO</span></a>
+  <p>Innovating Today. Empowering Tomorrow.</p>
+  <p>© <span id="year">2026</span> Due Two. All Rights Reserved.</p>
 </footer>
-<script src="script.js"></script>
+
 </body>
 </html>

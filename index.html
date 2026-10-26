@@ -592,12 +592,185 @@
 
 <!-- WHY CHOOSE DUE TWO -->
 <section id="why-us" class="section why-us">
-  <p class="kicker">06 / WHY CHOOSE US</p>
 
-  <div class="section-head">
+  <style>
+    #why-us {
+      position: relative;
+      padding-top: 80px;
+      padding-bottom: 80px;
+      overflow: hidden;
+    }
+
+    #why-us .why-heading {
+      max-width: 750px;
+      margin: 0 auto 45px;
+      text-align: center;
+    }
+
+    #why-us .why-heading .kicker {
+      margin-bottom: 18px;
+    }
+
+    #why-us .why-heading h2 {
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 1.25;
+      margin-bottom: 18px;
+    }
+
+    #why-us .why-heading h2 span {
+      color: var(--accent, #b69cff);
+    }
+
+    #why-us .why-heading .sub {
+      max-width: 650px;
+      margin: 0 auto;
+      line-height: 1.9;
+      opacity: 0.75;
+    }
+
+    #why-us .why-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 35px;
+    }
+
+    #why-us .why-card {
+      position: relative;
+      padding: 32px;
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.035);
+      transition: transform 0.3s ease,
+                  border-color 0.3s ease,
+                  background 0.3s ease;
+    }
+
+    #why-us .why-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--accent, #b69cff);
+      background: rgba(255, 255, 255, 0.065);
+    }
+
+    #why-us .why-number {
+      position: absolute;
+      top: 25px;
+      right: 27px;
+      color: var(--accent, #b69cff);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      opacity: 0.8;
+    }
+
+    #why-us .why-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 58px;
+      height: 58px;
+      margin-bottom: 22px;
+      border-radius: 17px;
+      background: rgba(255, 255, 255, 0.07);
+      font-size: 27px;
+    }
+
+    #why-us .why-card h3 {
+      margin: 0 0 13px;
+      font-size: 21px;
+      line-height: 1.5;
+    }
+
+    #why-us .why-card p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.9;
+      opacity: 0.75;
+    }
+
+    #why-us .why-cta {
+      margin-top: 30px;
+      padding: 42px 24px;
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      border-radius: 24px;
+      text-align: center;
+      background:
+        radial-gradient(
+          ellipse at top,
+          rgba(182, 156, 255, 0.15),
+          transparent 70%
+        ),
+        rgba(255, 255, 255, 0.025);
+    }
+
+    #why-us .why-cta h3 {
+      margin: 0 0 12px;
+      font-size: clamp(23px, 3vw, 32px);
+      line-height: 1.4;
+    }
+
+    #why-us .why-cta p {
+      margin: 0 0 24px;
+      line-height: 1.8;
+      opacity: 0.75;
+    }
+
+    #why-us .why-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 14px 24px;
+      border: 1px solid var(--accent, #b69cff);
+      border-radius: 999px;
+      color: inherit;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform 0.25s ease,
+                  background 0.25s ease,
+                  color 0.25s ease;
+    }
+
+    #why-us .why-btn:hover {
+      transform: translateY(-3px);
+      background: var(--accent, #b69cff);
+      color: #17131f;
+    }
+
+    @media (max-width: 700px) {
+      #why-us .why-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      #why-us .why-card {
+        padding: 27px 23px;
+      }
+
+      #why-us .why-card h3 {
+        font-size: 19px;
+      }
+
+      #why-us .why-cta {
+        padding: 32px 20px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      #why-us .why-card,
+      #why-us .why-btn {
+        transition: none;
+      }
+    }
+  </style>
+
+  <div class="why-heading">
+    <p class="kicker">06 / WHY CHOOSE US</p>
+
     <h2>
       Why Choose <span>Due Two?</span>
     </h2>
+
     <p class="sub">
       We don't just build technology. We turn ideas into
       meaningful solutions through creativity, collaboration,
@@ -655,13 +828,14 @@
   <div class="why-cta">
     <h3>Have an idea worth building?</h3>
     <p>Let's turn your vision into something real.</p>
+
     <a href="#contact" class="why-btn">
       Let's Work Together <span>↗</span>
     </a>
   </div>
+
 </section>
-
-
+<!-- END WHY CHOOSE DUE TWO -->
 <!-- CONTACT -->
 <section id="contact" class="contact-section">
   <div class="contact-glow"></div>

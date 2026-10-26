@@ -5,8 +5,6 @@
 Due Two is a modern, responsive website built to represent a technology startup founded by two Computer Science students passionate about Artificial Intelligence, Computer Vision, Robotics, Embedded Systems, and Software Engineering.
 
 The website serves as the official online presence of Due Two, showcasing its services, featured projects, technologies, team, and collaboration opportunities through a clean and modern user interface.
-![Uploading لقطة شاشة 2026-10-26 221629.png…]()
-
 ## ✨ Features
 
 - Responsive design for different screen sizes.
@@ -19,8 +17,8 @@ The website serves as the official online presence of Due Two, showcasing its se
 
 ## 🛠️ Built With
 
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript
 - Git & GitHub
 - GitHub Pages
@@ -38,7 +36,7 @@ The website serves as the official online presence of Due Two, showcasing its se
 - **Ayten Ehab Akl** — Co-Founder & Software Developer
 - **Ayten El-Maghraby** — Co-Founder & Software Developer
 
----
+
 
 <p align="center">
   <b>Due Two — Ideas Into Intelligent Solutions.</b>

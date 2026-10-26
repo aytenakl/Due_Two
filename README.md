@@ -27,7 +27,7 @@ The purpose of this project is to establish Due Two's online presence and showca
 - CSS
 - JavaScript
 - ## 📸 Preview
-<img width="1739" height="761" alt="لقطة شاشة 2026-07-11 002236" src="https://github.com/user-attachments/assets/57a2400d-446c-41cb-902e-681dd8fbce9e" />
+<img width="1451" height="887" alt="لقطة شاشة 2026-10-26 221629" src="https://github.com/user-attachments/assets/754e8c7b-3983-476f-b12d-b39614d87823" />
 
 
 ## Status

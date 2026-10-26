@@ -11,7 +11,6 @@ We bring together **Artificial Intelligence, Computer Vision, Robotics, Embedded
 
 📩 **Contact:** duetwo2026@gmail.com
 
----C:\Users\lenovo loq\OneDrive\Pictures\Screenshots\لقطة شاشة 2026-10-26 221629.png
 
 ## ✨ About Us
 
